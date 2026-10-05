@@ -74,20 +74,12 @@ public class FrmRegistraEmpleado extends JFrame implements ActionListener {
 		setLocationRelativeTo(null);
 		setResizable(false);
 
-		// =========================================================
-		// VENTANA PRINCIPAL
-		// =========================================================
-
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(242, 245, 249));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
-
-		// =========================================================
-		// TITULO PRINCIPAL
-		// =========================================================
 
 		JLabel lblTitulo = new JLabel("REGISTRO DE EMPLEADO");
 
@@ -99,10 +91,6 @@ public class FrmRegistraEmpleado extends JFrame implements ActionListener {
 
 		contentPane.add(lblTitulo);
 
-		// =========================================================
-		// SUBTITULO
-		// =========================================================
-
 		JLabel lblSubtitulo = new JLabel("Sistema de Gestión de Personal");
 
 		lblSubtitulo.setFont(new Font("Tahoma", Font.PLAIN, 14));
@@ -113,33 +101,18 @@ public class FrmRegistraEmpleado extends JFrame implements ActionListener {
 
 		contentPane.add(lblSubtitulo);
 
-		// =========================================================
-		// PANEL CENTRAL
-		// =========================================================
-
 		panelCentral = new JPanel();
 
 		panelCentral.setBackground(Color.WHITE);
 
-		panelCentral.setBorder(
-				BorderFactory.createCompoundBorder(
-						BorderFactory.createLineBorder(
-								new Color(210, 215, 220),
-								1
-						),
-						new EmptyBorder(10, 10, 10, 10)
-				)
-		);
+		panelCentral.setBorder(BorderFactory.createCompoundBorder(
+				BorderFactory.createLineBorder(new Color(210, 215, 220), 1), new EmptyBorder(10, 10, 10, 10)));
 
 		panelCentral.setBounds(50, 110, 660, 500);
 
 		panelCentral.setLayout(null);
 
 		contentPane.add(panelCentral);
-
-		// =========================================================
-		// NOMBRES
-		// =========================================================
 
 		JLabel lblNombres = new JLabel("Nombres");
 
@@ -156,19 +129,11 @@ public class FrmRegistraEmpleado extends JFrame implements ActionListener {
 
 		txtNombres.setBounds(190, 32, 400, 28);
 
-		txtNombres.setBorder(
-				BorderFactory.createLineBorder(
-						new Color(180, 190, 200)
-				)
-		);
+		txtNombres.setBorder(BorderFactory.createLineBorder(new Color(180, 190, 200)));
 
 		panelCentral.add(txtNombres);
 
 		txtNombres.setColumns(10);
-
-		// =========================================================
-		// APELLIDOS
-		// =========================================================
 
 		JLabel lblApellidos = new JLabel("Apellidos");
 
@@ -185,19 +150,11 @@ public class FrmRegistraEmpleado extends JFrame implements ActionListener {
 
 		txtApellidos.setBounds(190, 79, 400, 28);
 
-		txtApellidos.setBorder(
-				BorderFactory.createLineBorder(
-						new Color(180, 190, 200)
-				)
-		);
+		txtApellidos.setBorder(BorderFactory.createLineBorder(new Color(180, 190, 200)));
 
 		panelCentral.add(txtApellidos);
 
 		txtApellidos.setColumns(10);
-
-		// =========================================================
-		// DNI
-		// =========================================================
 
 		JLabel lblDNI = new JLabel("DNI");
 
@@ -214,19 +171,11 @@ public class FrmRegistraEmpleado extends JFrame implements ActionListener {
 
 		txtDNI.setBounds(190, 126, 400, 28);
 
-		txtDNI.setBorder(
-				BorderFactory.createLineBorder(
-						new Color(180, 190, 200)
-				)
-		);
+		txtDNI.setBorder(BorderFactory.createLineBorder(new Color(180, 190, 200)));
 
 		panelCentral.add(txtDNI);
 
 		txtDNI.setColumns(10);
-
-		// =========================================================
-		// EMAIL
-		// =========================================================
 
 		JLabel lblEmail = new JLabel("Email");
 
@@ -243,19 +192,11 @@ public class FrmRegistraEmpleado extends JFrame implements ActionListener {
 
 		txtEmail.setBounds(190, 173, 400, 28);
 
-		txtEmail.setBorder(
-				BorderFactory.createLineBorder(
-						new Color(180, 190, 200)
-				)
-		);
+		txtEmail.setBorder(BorderFactory.createLineBorder(new Color(180, 190, 200)));
 
 		panelCentral.add(txtEmail);
 
 		txtEmail.setColumns(10);
-
-		// =========================================================
-		// TELEFONO
-		// =========================================================
 
 		JLabel lblTelefono = new JLabel("Teléfono");
 
@@ -272,19 +213,11 @@ public class FrmRegistraEmpleado extends JFrame implements ActionListener {
 
 		txtTelefono.setBounds(190, 220, 400, 28);
 
-		txtTelefono.setBorder(
-				BorderFactory.createLineBorder(
-						new Color(180, 190, 200)
-				)
-		);
+		txtTelefono.setBorder(BorderFactory.createLineBorder(new Color(180, 190, 200)));
 
 		panelCentral.add(txtTelefono);
 
 		txtTelefono.setColumns(10);
-
-		// =========================================================
-		// FECHA NACIMIENTO
-		// =========================================================
 
 		JLabel lblFechaNacimiento = new JLabel("Fecha Nacimiento");
 
@@ -301,19 +234,11 @@ public class FrmRegistraEmpleado extends JFrame implements ActionListener {
 
 		txtFechaNacimiento.setBounds(190, 267, 400, 28);
 
-		txtFechaNacimiento.setBorder(
-				BorderFactory.createLineBorder(
-						new Color(180, 190, 200)
-				)
-		);
+		txtFechaNacimiento.setBorder(BorderFactory.createLineBorder(new Color(180, 190, 200)));
 
 		panelCentral.add(txtFechaNacimiento);
 
 		txtFechaNacimiento.setColumns(10);
-
-		// =========================================================
-		// SUELDO
-		// =========================================================
 
 		JLabel lblSueldo = new JLabel("Sueldo");
 
@@ -330,19 +255,11 @@ public class FrmRegistraEmpleado extends JFrame implements ActionListener {
 
 		txtSueldo.setBounds(190, 314, 400, 28);
 
-		txtSueldo.setBorder(
-				BorderFactory.createLineBorder(
-						new Color(180, 190, 200)
-				)
-		);
+		txtSueldo.setBorder(BorderFactory.createLineBorder(new Color(180, 190, 200)));
 
 		panelCentral.add(txtSueldo);
 
 		txtSueldo.setColumns(10);
-
-		// =========================================================
-		// TIPO DE EMPLEADO
-		// =========================================================
 
 		JLabel lblTipo = new JLabel("Tipo de Empleado");
 
@@ -359,29 +276,17 @@ public class FrmRegistraEmpleado extends JFrame implements ActionListener {
 
 		cboTipo.setBounds(190, 361, 400, 28);
 
-		cboTipo.setBorder(
-				BorderFactory.createLineBorder(
-						new Color(180, 190, 200)
-				)
-		);
+		cboTipo.setBorder(BorderFactory.createLineBorder(new Color(180, 190, 200)));
 
 		panelCentral.add(cboTipo);
 
-		// =========================================================
-		// BOTON REGISTRAR
-		// =========================================================
-
 		btnRegistrar = new JButton("Registrar");
 
-		btnRegistrar.setIcon(
-				new ImageIcon("icons/001-agregar.png")
-		);
+		btnRegistrar.setIcon(new ImageIcon("icons/001-agregar.png"));
 
 		btnRegistrar.addActionListener(this);
 
-		btnRegistrar.setFont(
-				new Font("Tahoma", Font.BOLD, 12)
-		);
+		btnRegistrar.setFont(new Font("Tahoma", Font.BOLD, 12));
 
 		btnRegistrar.setBounds(175, 420, 135, 38);
 
@@ -389,29 +294,17 @@ public class FrmRegistraEmpleado extends JFrame implements ActionListener {
 		btnRegistrar.setForeground(new Color(30, 45, 60));
 
 		btnRegistrar.setFocusPainted(false);
-		btnRegistrar.setBorder(
-				BorderFactory.createLineBorder(
-						new Color(170, 185, 200)
-				)
-		);
+		btnRegistrar.setBorder(BorderFactory.createLineBorder(new Color(170, 185, 200)));
 
 		panelCentral.add(btnRegistrar);
 
-		// =========================================================
-		// BOTON LIMPIAR
-		// =========================================================
-
 		btnLimpiar = new JButton("Limpiar");
 
-		btnLimpiar.setIcon(
-				new ImageIcon("icons/005-limpiar.png")
-		);
+		btnLimpiar.setIcon(new ImageIcon("icons/005-limpiar.png"));
 
 		btnLimpiar.addActionListener(this);
 
-		btnLimpiar.setFont(
-				new Font("Tahoma", Font.BOLD, 12)
-		);
+		btnLimpiar.setFont(new Font("Tahoma", Font.BOLD, 12));
 
 		btnLimpiar.setBounds(350, 420, 135, 38);
 
@@ -419,24 +312,12 @@ public class FrmRegistraEmpleado extends JFrame implements ActionListener {
 		btnLimpiar.setForeground(new Color(50, 50, 50));
 
 		btnLimpiar.setFocusPainted(false);
-		btnLimpiar.setBorder(
-				BorderFactory.createLineBorder(
-						new Color(190, 190, 190)
-				)
-		);
+		btnLimpiar.setBorder(BorderFactory.createLineBorder(new Color(190, 190, 190)));
 
 		panelCentral.add(btnLimpiar);
 
-		// =========================================================
-		// CARGAR COMBO
-		// =========================================================
-
 		cargarComboTipo();
 	}
-
-	// =============================================================
-	// EVENTOS
-	// =============================================================
 
 	public void actionPerformed(ActionEvent e) {
 
@@ -448,10 +329,6 @@ public class FrmRegistraEmpleado extends JFrame implements ActionListener {
 			handleBtnLimpiarActionPerformed(e);
 		}
 	}
-
-	// =============================================================
-	// REGISTRAR EMPLEADO
-	// =============================================================
 
 	protected void handleBtnRegistrarActionPerformed(ActionEvent e) {
 
@@ -470,100 +347,70 @@ public class FrmRegistraEmpleado extends JFrame implements ActionListener {
 
 		if (nombres.isEmpty()) {
 
-			JOptionPane.showMessageDialog(
-					this,
-					"Debe ingresar los nombres."
-			);
+			JOptionPane.showMessageDialog(this, "Debe ingresar los nombres.");
 
 			return;
 		}
 
 		if (!nombres.matches(ValidateUtil.TEXTO_40)) {
 
-			JOptionPane.showMessageDialog(
-					this,
-					"Los nombres son inválidos. Deben contener solo letras y espacios."
-			);
+			JOptionPane.showMessageDialog(this, "Los nombres son inválidos. Deben contener solo letras y espacios.");
 
 			return;
 		}
 
 		if (apellidos.isEmpty()) {
 
-			JOptionPane.showMessageDialog(
-					this,
-					"Debe ingresar los apellidos."
-			);
+			JOptionPane.showMessageDialog(this, "Debe ingresar los apellidos.");
 
 			return;
 		}
 
 		if (!apellidos.matches(ValidateUtil.TEXTO_40)) {
 
-			JOptionPane.showMessageDialog(
-					this,
-					"Los apellidos son inválidos. Deben contener solo letras y espacios."
-			);
+			JOptionPane.showMessageDialog(this, "Los apellidos son inválidos. Deben contener solo letras y espacios.");
 
 			return;
 		}
 
 		if (!dni.matches(ValidateUtil.DNI)) {
 
-			JOptionPane.showMessageDialog(
-					this,
-					"El DNI es inválido. Debe contener exactamente 8 dígitos."
-			);
+			JOptionPane.showMessageDialog(this, "El DNI es inválido. Debe contener exactamente 8 dígitos.");
 
 			return;
 		}
 
 		if (!email.matches(ValidateUtil.EMAIL)) {
 
-			JOptionPane.showMessageDialog(
-					this,
-					"El email es inválido. Debe tener un formato válido."
-			);
+			JOptionPane.showMessageDialog(this, "El email es inválido. Debe tener un formato válido.");
 
 			return;
 		}
 
 		if (!telefono.matches(ValidateUtil.ENTERO_MAS_UN_DIGITO)) {
 
-			JOptionPane.showMessageDialog(
-					this,
-					"El teléfono debe contener solamente números."
-			);
+			JOptionPane.showMessageDialog(this, "El teléfono debe contener solamente números.");
 
 			return;
 		}
 
 		if (!fechaNacimiento.matches(ValidateUtil.DATE_YYYY_MM_DD)) {
 
-			JOptionPane.showMessageDialog(
-					this,
-					"La fecha de nacimiento es inválida. Use el formato YYYY-MM-DD."
-			);
+			JOptionPane.showMessageDialog(this, "La fecha de nacimiento es inválida. Use el formato YYYY-MM-DD.");
 
 			return;
 		}
 
 		if (!sueldo.matches(ValidateUtil.REAL_CON_O_SIN_DECIMALES)) {
 
-			JOptionPane.showMessageDialog(
-					this,
-					"El sueldo debe ser un número válido."
-			);
+			JOptionPane.showMessageDialog(this, "El sueldo debe ser un número válido.");
 
 			return;
 		}
 
 		if (cboTipo.getSelectedIndex() == 0) {
 
-			JOptionPane.showMessageDialog(
-					this,
-					"Debe seleccionar un tipo de empleado."
-			);
+			JOptionPane.showMessageDialog(this, "Debe seleccionar un tipo de empleado.");
 
 			return;
 		}
@@ -574,11 +421,7 @@ public class FrmRegistraEmpleado extends JFrame implements ActionListener {
 
 			TipoEmpleado objTipoEmpleado = new TipoEmpleado();
 
-			objTipoEmpleado.setIdTipoEmpleado(
-					Integer.parseInt(
-							tipoSeleccionado.split(" - ")[0]
-					)
-			);
+			objTipoEmpleado.setIdTipoEmpleado(Integer.parseInt(tipoSeleccionado.split(" - ")[0]));
 
 			// 4. Crear objeto Empleado
 
@@ -590,13 +433,9 @@ public class FrmRegistraEmpleado extends JFrame implements ActionListener {
 			objEmpleado.setEmail(email);
 			objEmpleado.setTelefono(telefono);
 
-			objEmpleado.setFechaNacimiento(
-					LocalDate.parse(fechaNacimiento)
-			);
+			objEmpleado.setFechaNacimiento(LocalDate.parse(fechaNacimiento));
 
-			objEmpleado.setSueldo(
-					Double.parseDouble(sueldo)
-			);
+			objEmpleado.setSueldo(Double.parseDouble(sueldo));
 
 			objEmpleado.setTipoEmpleado(objTipoEmpleado);
 
@@ -604,36 +443,24 @@ public class FrmRegistraEmpleado extends JFrame implements ActionListener {
 
 			EmpleadoModel objEmpleadoModel = new EmpleadoModel();
 
-			int insertados =
-					objEmpleadoModel.insertaEmpleado(objEmpleado);
+			int insertados = objEmpleadoModel.insertaEmpleado(objEmpleado);
 
 			// 6. Mostrar mensaje de confirmacion
 
 			if (insertados > 0) {
 
-				JOptionPane.showMessageDialog(
-						this,
-						"Empleado registrado correctamente"
-				);
+				JOptionPane.showMessageDialog(this, "Empleado registrado correctamente");
 
 				handleBtnLimpiarActionPerformed(e);
 			}
 
 		} catch (Exception ex) {
 
-			JOptionPane.showMessageDialog(
-					this,
-					"Error al registrar el empleado: "
-							+ ex.getMessage()
-			);
+			JOptionPane.showMessageDialog(this, "Error al registrar el empleado: " + ex.getMessage());
 
 			ex.printStackTrace();
 		}
 	}
-
-	// =============================================================
-	// LIMPIAR
-	// =============================================================
 
 	protected void handleBtnLimpiarActionPerformed(ActionEvent e) {
 
@@ -650,26 +477,17 @@ public class FrmRegistraEmpleado extends JFrame implements ActionListener {
 		}
 	}
 
-	// =============================================================
-	// CARGAR COMBO TIPO EMPLEADO
-	// =============================================================
-
 	public void cargarComboTipo() {
 
 		TipoEmpleadoModel model = new TipoEmpleadoModel();
 
-		List<TipoEmpleado> tipos =
-				model.listarTipoEmpleado();
+		List<TipoEmpleado> tipos = model.listarTipoEmpleado();
 
 		cboTipo.addItem("[ Seleccione un tipo ]");
 
 		for (TipoEmpleado tipo : tipos) {
 
-			cboTipo.addItem(
-					tipo.getIdTipoEmpleado()
-					+ " - "
-					+ tipo.getDescripcion()
-			);
+			cboTipo.addItem(tipo.getIdTipoEmpleado() + " - " + tipo.getDescripcion());
 		}
 	}
 }
